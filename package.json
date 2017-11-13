@@ -1,0 +1,16 @@
+{
+  "name": "lightboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "startDevServer": "(cd server && npm run dev)",
+    "startDevClient": "(cd client && npm run dev)",
+    "dev": "NODE_ENV=development concurrently --names 'SERVER,CLIENT' -c 'bgBlue.bold,bgMagenta.bold' 'npm run startDevServer' 'npm run startDevClient'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.5.0"
+  }
+}

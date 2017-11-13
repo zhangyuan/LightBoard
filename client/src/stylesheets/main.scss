@@ -1,0 +1,13 @@
+@import "medium-editor/medium-editor.css";
+@import "medium-editor/themes/default.css";
+
+textarea, input, button { outline: none; }
+
+.medium-editor-element {
+  outline: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
