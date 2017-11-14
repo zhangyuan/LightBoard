@@ -4,8 +4,8 @@ WORKDIR /app
 
 COPY server/ /app/server
 COPY client/ /app/client
-COPY package.json package-lock.json go.sh /app/
+COPY package.json package-lock.json /app/
 
-RUN npm install --unsafe-perm && npm run build
+RUN npm install --unsafe-perm && (cd server && npm install --unsafe-perm) && (cd client && npm install --unsafe-perm)
 
-CMD ["npm run dev"]
+CMD ["npm", "run", "dev"]
