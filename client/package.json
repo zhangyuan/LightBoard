@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "del dist/*",
     "analyze": "BundleAnalyzer=TRUE webpack",
-    "dev": "NODE_ENV=development webpack-dev-server",
+    "dev": "NODE_ENV=development webpack-dev-server --host 0.0.0.0",
     "build": "npm run clean && NODE_ENV=production webpack"
   },
   "author": "",
