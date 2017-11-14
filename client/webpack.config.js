@@ -96,7 +96,8 @@ let config = {
     extractSass,
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: `"${process.env.NODE_ENV}"`
+        NODE_ENV: `"${process.env.NODE_ENV}"`,
+        SERVER_NAME: `"${process.env.SERVER_NAME || '0.0.0.0'}"`
       }
     })
   ]
